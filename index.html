@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Escritoras famosas</title>
+        <link rel="stylesheet" href="principal.css">
+    </head>
+
+    <body>
+        
+        <script>
+            document.oncontextmenu = function(){return false}
+            </script>
+            <!--Scrip para deshabilitar el uso del clic derecho-->
+            <script>
+                window.onload = function()
+                // Para internet Explorer
+                {document.onselectstart = function(){return false;} 
+                // Para Firefox
+                document.onmousedown = function(){return false;}}
+                </script>
+                <!--Script para evitarl la copia de texto en la pagina-->
+            <header>
+                <h1>Escritoras Colombianas</h1>
+            </header>
+            <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Libros.html">Libros</a></li>
+            <li><a href="Escritoras.html">Escritoras</a></li>
+            <li><a href="Escritoras.html">Escritoras</a></li>
+            </ul>
+
+
+            <div class="agrupar">
+                <section class="zonauno">
+                    <article>
+                        
+                        <h2 class="h2">Escritoras colombianas y sus obras destacadas</h2>
+                        <p>Ya desde finales del silgo XIX escritoras como Soledad Acosta de Samper producían, editaban y redactaba novelas y revistas en Colombia. Sin embargo, según Adriana Rosas, investigadora de humanidades y filosofía en la Universidad del Norte (Barranquilla, Colombia), hacia las dos últimas décadas del siglo XX se empezó a conocer el trabajo de las escritoras colombianas.</p>
+                        <p>Si bien ha existido una producción escrita de distintas mujeres en el país desde el siglo XIX, Adriana Rosas indica que fue en la década de 1980 que se dio el boom. Frente a un canon que las había mantenido al margen, han surgido en la poesía, la narrativa y el ensayo. No solo han descrito un país complejo y lleno de contradicciones, sino que también han reivindicado su lugar y producción artística.</p>
+                        <p>Para las escritoras colombianas, y para la sociedad en general, hoy sigue siendo un trabajo fundamental la divulgación de sus vidas y obras. Siguiendo la línea planteada por Adriana Rosas, más que un recorrido histórico. A continuacion 3 de las escritoras mas reconocidas en Colombia</p>
+                        <h2 class="h2">Carolina Sanín</h2>
+                        <a title="Carolina Sanín" href="https://twitter.com/SaninPazC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="caro" src="images/CAROLINASANIN.jpg" alt="Carolina Sanín" width="300" height="200"></a> 
+                        <script>
+                            window.setInterval (BlinkIt, 500);
+                            var color = "red";
+                            function BlinkIt () {
+                            var blink = document.getElementById ("blink");
+                            color = (color == "#ffffff")? "red" : "#ffffff";
+                            blink.style.color = color;
+                            blink.style.fontSize='20px';}
+                            </script>
+                            <div id="blink">Carolina Sanín es una escritora, columnista, actriz y docente colombiana con ciudadanía española. Ha publicado novelas, ensayos, cuentos y libros para niños. Sus relatos han aparecido en revistas y antologías en América Latina, Estados Unidos y España. Parte de su obra ha sido traducida al inglés y al italiano.</div>
+                            <div id="blink" onclick="parent.location='http://norfipc.com'">
+                            </div>
+                            <!--Script para parpadeo-->
+
+
+                        <h2 class="h2">Piedad Bonnett</h2>
+                        <a title="Piedad Bonnett" href="https://es.wikipedia.org/wiki/Piedad_Bonnett"><img class="bonn" src="images/Bonnett.jpg" width="300" height="300"></a>
+                        <div class="contenedoruno">
+                            <p class="parrafobon">Piedad Bonnett es una escritora colombiana nacida en Amalfi Antioquia, aterrizó en Bogotá siendo una niña, donde creció en la localidad de Teusaquillo. Es licenciada en Filosofía y Letras de la Universidad de los Andes, donde también ha ejercido como docente. Ha escrito doce libros, entre poesía y novelas. La obra protagonista de esta primera sesión dedicada a esta escritora fue  Explicaciones no pedidas, publicada en el año 2011, y que le ha hecho merecedora de distintos reconocimientos.<span>&#160;</span></p>
+                            </div>
+
+                        <h2 class="h2">Laura Restrepo</h2>
+                        <a title="Laura Restrepo" href="http://escritoras.com/escritoras/Laura-Restrepo"><img class="laura" src="images/Laura.jpg" width="300" height="240"></a>
+
+                        <p class="cambioColor">Laura Restrepo Casabianca es una escritora y periodista colombiana, especialmente conocida por su novela Delirio, ganadora del Premio Alfaguara y del Grinzane Cavour.</p>
+                    </article>
+                </section>
+
+                <input type="button" value="Imprime esta página" onclick="window.print()">
+                <!--Script para dar la posibilidad de imprimir la pagina-->
+
+                <div id="fechahoy"></div>		
+                <script>
+                var d=new Date();var month=new Array(12);month[0]='Enero';month[1]='Febrero';month[2]='Marzo';month[3]='Abril';month[4]='Mayo';month[5]='Junio';month[6]='Julio';month[7]='Agosto';month[8]='Septiembre';month[9]='Octubre';month[10]='Noviembre';month[11]='Diciembre';var todaysDate=+d.getDate()+' de '+month[d.getUTCMonth()]+' del '+d.getUTCFullYear();
+                document.getElementById('fechahoy').innerHTML='Hoy es: '+todaysDate;
+                </script>
+                <!--Script para mostrar la fecha-->
+                <script>
+                    var ran
+                    ran = Math.round(Math.random()*50000)
+                    document.write("Usted es el visitante " + ran + " de esta página.")
+                    </script>
+        </div>
+    </body>
+</html>
